@@ -1,21 +1,21 @@
 import * as React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from '../Components/NavBar'
+     import Header from '../Components/NavBar'
 import News from '../Components/News'
-import About from '../Components/About'
+import About    from '../Components/About'
 
 // Default Variables
-let pageSizeHere = 10
+let pageSizeHere =    10
 let apiKey = process.env.REACT_APP_API_KEY
-let country = "in"
+let country =     "in"
 
-const router = createBrowserRouter([
+            const router = createBrowserRouter([
     {
-        path: "/technology",
+                path: "/technology",
         // key: "technology",
         element: (
-            <div>
-                <Header />
+                <div>
+                   <Header />
                 <News
                     pageSize={pageSizeHere}
                     country={country}
