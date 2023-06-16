@@ -1,0 +1,27 @@
+{
+  "name": "autoformat_setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "three.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.html\" && eslint --fix \"src/**/*.js\" && stylelint --fix \"src/**/*.css\"",
+  "pre-commit": "npm run format"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.7.0",
+    "stylelint-config-standard": "^33.0.0"
+  }
+}

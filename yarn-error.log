@@ -1,0 +1,51 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn global dir --json
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/pankajkumar/.pyenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion Tech Preview.app/Contents/Public:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/pankajkumar/Downloads/Coding/All_Projects/0.Trial_Code/autoformat_setup/package.json: Unexpected token } in JSON at position 178
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "autoformat_setup",
+    "version": "1.0.0",
+    "description": "",
+    "main": "three.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "eslint": "^8.42.0",
+      "eslint-plugin-react": "^7.32.2",
+      "husky": "^8.0.3",
+      "prettier": "^2.8.8",
+      "stylelint": "^15.7.0",
+      "stylelint-config-standard": "^33.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
