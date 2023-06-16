@@ -5,7 +5,7 @@
   "main": "three.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"**/*.html\" && prettier --write \"**/*.js\" && prettier --write \"**/*.css\" && prettier --write \"**/*.jsx\" && npx prettier --write \"**/*.json\" && npx prettier --write \"**/*.md\"",
+    "format": "prettier --write \"**/*.html\" && prettier --write \"**/*.js\" && prettier --write \"**/*.css\" && prettier --write \"**/*.jsx\" && prettier --write \"**/*.json\" && prettier --write \"**/*.md\"",
     "pre-commit": "npm run format",
     "precommit": "lint-staged"
   },
@@ -15,9 +15,24 @@
     }
   },
   "lint-staged": {
-    "*.js": ["eslint --fix"],
-    "*.json": ["prettier --write"],
-    "*.md": ["prettier --write"]
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.jsx": [
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
   },
   "keywords": [],
   "author": "",
