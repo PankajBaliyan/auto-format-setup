@@ -7,7 +7,7 @@ import About from '../Components/About';
 // Default Variables
 let pageSizeHere = 10;
 let apiKey = process.env.REACT_APP_API_KEY;
-let    country = 'in';
+let country = 'in';
 
 const router = createBrowserRouter([
   {
