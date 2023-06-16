@@ -1,1 +1,30 @@
-npx eslint --init
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:json/recommended",
+    "prettier",
+    "plugin:markdown/recommended"
+  ],
+  "plugins": ["markdown", "json", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error"
+    // Additional rules or overrides if needed
+  }
+}
