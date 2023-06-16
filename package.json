@@ -5,6 +5,8 @@
   "main": "three.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.html\" && prettier --write \"**/*.js\" && prettier --write \"**/*.css\" && prettier --write \"**/*.jsx\" && prettier --write \"**/*.json\" && prettier --write \"**/*.md\"",
+    "pre-format": "npm run format",
     "precommit": "lint-staged"
   },
   "husky": {
