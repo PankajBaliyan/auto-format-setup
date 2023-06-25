@@ -45,7 +45,7 @@ echo "ESLint configuration ✅"
 # Create Prettier configuration file
 echo '{
   "printWidth": 80,
-  "tabWidth": 2,
+  "tabWidth": 4,
   "singleQuote": true,
   "trailingComma": "all"
 }' > .prettierrc.json
@@ -102,7 +102,7 @@ file="package.json"
 contents=$(cat "$file")
 
 # Define the new code to add
-new_code='  "format": "prettier --write \"**/*.html\" && prettier --write \"**/*.js\" && prettier --write \"**/*.css\" && prettier --write \"**/*.jsx\" && prettier --write \"**/*.json\" && prettier --write \"**/*.md\"",
+new_code='  "format": "find . -name '*.html' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write && find . -name '*.css' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write && find . -name '*.js' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write && find . -name '*.jsx' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write && find . -name '*.json' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write && find . -name '*.md' -type f -not -path './node_modules/*' -print0 | xargs -0 -r prettier --write",
   "pre-format": "npm run format",
   "precommit": "lint-staged"'
 
