@@ -10,30 +10,30 @@ let apiKey = process.env.REACT_APP_API_KEY;
 let country = 'in';
 
 const router = createBrowserRouter([
-  {
-    path: '/technology',
-    // key: "technology",
-    element: (
-      <div>
-        <Header />
-        <News
-          pageSize={pageSizeHere}
-          country={country}
-          category="technology"
-          apiKey={apiKey}
-          key="technology"
-        />
-      </div>
-    ),
-    errorElement: 'no page found',
-  },
+    {
+        path: '/technology',
+        // key: "technology",
+        element: (
+            <div>
+                <Header />
+                <News
+                    pageSize={pageSizeHere}
+                    country={country}
+                    category="technology"
+                    apiKey={apiKey}
+                    key="technology"
+                />
+            </div>
+        ),
+        errorElement: 'no page found',
+    },
 ]);
 const AppRouter = () => {
-  return (
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  );
+    return (
+        <React.StrictMode>
+            <RouterProvider router={router} />
+        </React.StrictMode>
+    );
 };
 
 export default AppRouter;
